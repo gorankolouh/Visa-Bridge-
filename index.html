@@ -5,22 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VisaBridge | Visa, Immigration &amp; Relocation Assistance in Europe and Asia</title>
 <meta name="description" content="VisaBridge helps individuals and families with visas, residency and relocation across Europe and Asia. Send one request, get a fixed-price offer within 24 hours.">
-<link rel="canonical" href="https://visabridge.online/">
+<link rel="canonical" href="https://www.visabridge.online/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="VisaBridge">
 <meta property="og:title" content="VisaBridge | Immigration &amp; Relocation Made Simple">
 <meta property="og:description" content="One request. One clear offer. One fixed price. Visa, residency and relocation support across Europe and Asia.">
-<meta property="og:url" content="https://visabridge.online/">
-<meta property="og:image" content="https://visabridge.online/logo.png">
+<meta property="og:url" content="https://www.visabridge.online/">
+<meta property="og:image" content="https://www.visabridge.online/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="VisaBridge | Immigration &amp; Relocation Made Simple">
 <meta name="twitter:description" content="Visa, residency and relocation support across Europe and Asia, with a fixed-price offer within 24 hours.">
-<meta name="twitter:image" content="https://visabridge.online/logo.png">
+<meta name="twitter:image" content="https://www.visabridge.online/logo.png">
 <meta name="theme-color" content="#0B5CAD">
 <link rel="icon" type="image/png" href="favicon.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"Organization","name":"VisaBridge","url":"https://visabridge.online/","legalName":"Visa Bridge LTD","foundingDate":"2023","telephone":"+447445498885","address":{"@type":"PostalAddress","streetAddress":"124 City Rd","addressLocality":"London","postalCode":"EC1V 2NX","addressCountry":"GB"},"slogan":"Immigration & Relocation Made Simple","description":"Visa, immigration and relocation support across Europe and Asia, delivered with experienced local partners.","email":"info@visabridge.online","areaServed":["Europe","Thailand","Philippines","Malaysia","Indonesia","Vietnam","Cambodia","Japan","Laos"]},
+{"@type":"Organization","name":"VisaBridge","url":"https://www.visabridge.online/","legalName":"Visa Bridge LTD","foundingDate":"2023","telephone":"+447445498885","address":{"@type":"PostalAddress","streetAddress":"124 City Rd","addressLocality":"London","postalCode":"EC1V 2NX","addressCountry":"GB"},"slogan":"Immigration & Relocation Made Simple","description":"Visa, immigration and relocation support across Europe and Asia, delivered with experienced local partners.","email":"info@visabridge.online","areaServed":["Europe","Thailand","Philippines","Malaysia","Indonesia","Vietnam","Cambodia","Japan","Laos"]},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"How quickly will you respond?","acceptedAnswer":{"@type":"Answer","text":"We aim to respond to every request within 24 hours."}},
 {"@type":"Question","name":"Do I need to know which visa I need?","acceptedAnswer":{"@type":"Answer","text":"No. Tell us what you want to do and where you want to go. We will review your situation and explain the available options."}},
@@ -303,7 +303,7 @@ footer h3{color:#fff;font-size:1rem}
   <h2>Start Your Request</h2>
   <p>Tell us what you need. We review your situation and reply with your options and a fixed price. You pay nothing until you approve the offer. Prefer to chat? <a href="https://wa.me/447445498885" rel="noopener" style="color:var(--blue);font-weight:650">Message us on WhatsApp</a> or email <a href="mailto:info@visabridge.online" style="color:var(--blue);font-weight:650">info@visabridge.online</a>.</p>
   <!-- Connect a backend by setting data-endpoint to your form service (e.g. Formspree, Vercel Function, CRM webhook). -->
-  <form id="req" method="post" action="#" data-endpoint="" enctype="multipart/form-data" novalidate>
+  <form id="req" method="post" action="#" data-endpoint="https://formspree.io/f/mjyggojn" novalidate>
    <div class="grid">
     <div><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required></div>
     <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
@@ -316,10 +316,11 @@ footer h3{color:#fff;font-size:1rem}
     <div><label for="date">Intended travel / relocation date</label><input id="date" name="date" type="date"></div>
     <div><label for="stay">Length of stay</label><input id="stay" name="length_of_stay" placeholder="e.g. 3 months, 1 year"></div>
     <div><label for="ppl">Number of people</label><input id="ppl" name="people" type="number" min="1" value="1"></div>
-    <div><label for="doc">Document upload (optional)</label><input id="doc" name="document" type="file" accept=".pdf,.jpg,.jpeg,.png"></div>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+    <input type="hidden" name="_subject" value="New VisaBridge request">
     <div class="full"><label for="msg">Describe what you need</label><textarea id="msg" name="message"></textarea></div>
     <div class="full check"><input id="ack" name="acknowledged" type="checkbox" required><label for="ack">I understand that submitting this request does not guarantee visa approval. VisaBridge will first review my situation and provide an offer.</label></div>
-    <div class="full"><button class="btn btn-navy" type="submit">Send My Request</button><p class="form-note">We normally respond within 24 hours. You are not asked to pay before your request has been reviewed.</p></div>
+    <div class="full"><button class="btn btn-navy" type="submit">Send My Request</button><p class="form-note">We normally respond within 24 hours. You are not asked to pay before your request has been reviewed. You can send documents later by email or WhatsApp after we reply.</p></div>
    </div>
    <p id="status" role="status"></p>
   </form>
